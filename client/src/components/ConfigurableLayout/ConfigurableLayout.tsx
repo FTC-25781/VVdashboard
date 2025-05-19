@@ -20,6 +20,7 @@ import GraphView from '@/components/views/GraphView/GraphView';
 import FieldView from '@/components/views/FieldView/FieldView';
 import ConfigView from '@/components/views/ConfigView/ConfigView';
 import TelemetryView from '@/components/views/TelemetryView';
+import ServoView from '@/components/views/ServoView';
 import RecorderView from '@/components/views/RecorderView/RecorderView';
 import CameraView from '@/components/views/CameraView';
 import OpModeView from '@/components/views/OpModeView';
@@ -66,6 +67,7 @@ const VIEW_MAP: { [key in ConfigurableView]: ReactElement } = {
   [ConfigurableView.GRAPH_VIEW]: <GraphView />,
   [ConfigurableView.CONFIG_VIEW]: <ConfigView />,
   [ConfigurableView.TELEMETRY_VIEW]: <TelemetryView />,
+  [ConfigurableView.SERVO_VIEW]: <ServoView />,
   [ConfigurableView.RECORDER_VIEW]: <RecorderView />,
   [ConfigurableView.CAMERA_VIEW]: <CameraView />,
   [ConfigurableView.OPMODE_VIEW]: <OpModeView />,
@@ -173,7 +175,7 @@ const DEFAULT_GRID: GridItem[] = [
   },
   {
     id: uuidv4(),
-    view: ConfigurableView.TELEMETRY_VIEW,
+    view: ConfigurableView.SERVO_VIEW,
     layout: {
       x: 8,
       y: 7,
@@ -228,7 +230,7 @@ const DEFAULT_GRID_MEDIUM: GridItem[] = [
   },
   {
     id: uuidv4(),
-    view: ConfigurableView.TELEMETRY_VIEW,
+    view: ConfigurableView.SERVO_VIEW,
     layout: {
       x: 8,
       y: 11,
@@ -283,7 +285,7 @@ const DEFAULT_GRID_TALL: GridItem[] = [
   },
   {
     id: uuidv4(),
-    view: ConfigurableView.TELEMETRY_VIEW,
+    view: ConfigurableView.SERVO_VIEW,
     layout: {
       x: 8,
       y: 11,

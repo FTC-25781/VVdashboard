@@ -9,6 +9,7 @@ import CameraView from '@/components/views/CameraView';
 import GraphView from '@/components/views/GraphView/GraphView';
 import ConfigView from '@/components/views/ConfigView/ConfigView';
 import TelemetryView from '@/components/views/TelemetryView';
+import ServoView from '@/components/views/ServoView';
 import FieldView from '@/components/views/FieldView/FieldView';
 
 const LayoutPreset = {
@@ -42,7 +43,7 @@ const LAYOUT_DETAILS: { [key in Values<typeof LayoutPreset>]: Layout } = {
           <ConfigView />
         </Tile>
         <Tile row={3} col={3}>
-          <TelemetryView />
+          <ServoView />
         </Tile>
       </TileGrid>
     ),

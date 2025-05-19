@@ -15,9 +15,7 @@ export const gamepadConnected = (user: number): GamepadConnectedAction => ({
   user,
 });
 
-export const gamepadDisconnected = (
-  user: number,
-): GamepadDisonnectedAction => ({
+export const gamepadDisconnected = (user: number,): GamepadDisonnectedAction => ({
   type: GAMEPAD_DISCONNECTED,
   user,
 });
